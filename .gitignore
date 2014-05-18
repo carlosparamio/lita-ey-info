@@ -1,0 +1,6 @@
+*.gem
+.bundle
+.config
+.ruby-gemset
+.ruby-version
+coverage
