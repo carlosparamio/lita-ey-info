@@ -24,6 +24,10 @@ module Lita
         config.api_token = ""
       end
 
+      def self.namespace
+        "ey"
+      end
+
       def list_envs(response)
         response.reply "I've sent you the apps and environments list privately... shhhh..." unless response.message.source.private_message?
         response.reply_privately `bundle exec ey environments --all --api-token=#{config.api_token}`

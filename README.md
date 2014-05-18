@@ -17,7 +17,7 @@ gem "lita-ey-info"
 Don't forget to include your EngineYard API key on the lita_config.rb file:
 
 ``` ruby
-  config.handlers.ey_info.api_token = "YOUR_EY_API_TOKEN"
+  config.handlers.ey.api_token = "YOUR_EY_API_TOKEN"
 ```
 
 ## Usage
