@@ -14,13 +14,19 @@ Add lita-ey-info to your Lita instance's Gemfile:
 gem "lita-ey-info"
 ```
 
+Don't forget to include your EngineYard API key on the lita_config.rb file:
+
+``` ruby
+  config.handlers.ey_info.api_token = "YOUR_EY_API_TOKEN"
+```
+
 ## Usage
 
 ```
-ey envs
-ey <app_name> <env_name> servers
-ey <app_name> <env_name> logs
-ey <app_name> <env_name> status
+You: @Lita ey envs
+You: @Lita ey <app_name> <env_name> servers
+You: @Lita ey <app_name> <env_name> logs
+You: @Lita ey <app_name> <env_name> status
 ```
 
 ## License
