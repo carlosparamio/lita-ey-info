@@ -1,6 +1,7 @@
 *.gem
 .bundle
 .config
+.coveralls.yml
 .ruby-gemset
 .ruby-version
 coverage
