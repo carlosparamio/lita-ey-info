@@ -29,29 +29,33 @@ module Lita
       end
 
       def list_envs(response)
-        response.reply "I've sent you the apps and environments list privately... shhhh..." unless response.message.source.private_message?
+        response.reply "Retrieving info..."
         response.reply_privately `bundle exec ey environments --all --api-token=#{config.api_token}`
+        response.reply "I've sent you the apps and environments list privately... shhhh..." unless response.message.source.private_message?
       end
 
       def list_servers(response)
         app = response.matches[0][0]
         env = response.matches[0][1]
-        response.reply "I've sent you the servers list privately... shhhh..." unless response.message.source.private_message?
+        response.reply "Retrieving info..."
         response.reply_privately `bundle exec ey servers --app=#{app} --environment=#{env} --api-token=#{config.api_token}`
+        response.reply "I've sent you the servers list privately... shhhh..." unless response.message.source.private_message?
       end
 
       def show_logs(response)
         app = response.matches[0][0]
         env = response.matches[0][1]
-        response.reply "I've sent you the logs privately... shhhh..." unless response.message.source.private_message?
+        response.reply "Retrieving info..."
         response.reply_privately `bundle exec ey logs --app=#{app} --environment=#{env} --api-token=#{config.api_token}`
+        response.reply "I've sent you the logs privately... shhhh..." unless response.message.source.private_message?
       end
 
       def show_status(response)
         app = response.matches[0][0]
         env = response.matches[0][1]
-        response.reply "I've sent you the status info privately... shhhh..." unless response.message.source.private_message?
+        response.reply "Retrieving info..."
         response.reply_privately `bundle exec ey status --app=#{app} --environment=#{env} --api-token=#{config.api_token}`
+        response.reply "I've sent you the status info privately... shhhh..." unless response.message.source.private_message?
       end
 
     end
