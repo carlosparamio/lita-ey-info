@@ -29,6 +29,10 @@ You: @Lita ey <app_name> <env_name> logs
 You: @Lita ey <app_name> <env_name> status
 ```
 
+## See also
+
+[lita-ey-deploy](http://github.com/carlosparamio/lita-ey-deploy)
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
