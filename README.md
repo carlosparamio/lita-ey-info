@@ -18,15 +18,37 @@ Don't forget to include your EngineYard API key on the lita_config.rb file:
 
 ``` ruby
   config.handlers.ey.api_token = "YOUR_EY_API_TOKEN"
+  config.handlers.ey.apps = {
+    "my_app_name_for_lita" => {
+      "ey_name" => "my_app_name_at_ey",
+      "envs" => {
+        "test" => {
+          ey_name: "my_app_testing",
+          auth_group: "devs",
+          default_branch: "develop"
+        },
+        "stage" => {
+          ey_name: "my_app_staging",
+          auth_group: "testers",
+          default_branch: "stage"
+        },
+        "production" => {
+          ey_name: "my_app_production",
+          auth_group: "devops",
+          default_branch: "master"
+        }
+      }
+    }
+  }
 ```
 
 ## Usage
 
 ```
 You: @Lita ey envs
-You: @Lita ey <app_name> <env_name> servers
-You: @Lita ey <app_name> <env_name> logs
-You: @Lita ey <app_name> <env_name> status
+You: @Lita ey servers [env_name]
+You: @Lita ey logs [env_name]
+You: @Lita ey status [env_name]
 ```
 
 ## See also

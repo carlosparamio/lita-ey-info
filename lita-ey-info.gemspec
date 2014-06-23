@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-ey-info"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["Carlos Paramio"]
   spec.email         = ["hola@carlosparamio.com"]
   spec.description   = %q{A Lita handler to consult EY info.}
@@ -16,10 +16,11 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "lita", ">= 3.2.0"
 
   spec.add_dependency "engineyard"
+  spec.add_dependency "lita-ey-base"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "coveralls"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec", ">= 3.0.0.beta1"
+  spec.add_development_dependency "rspec", ">= 3.0.0"
   spec.add_development_dependency "simplecov"
 end
