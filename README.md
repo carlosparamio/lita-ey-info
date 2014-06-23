@@ -46,9 +46,9 @@ Don't forget to include your EngineYard API key on the lita_config.rb file:
 
 ```
 You: @Lita ey envs
-You: @Lita ey servers [env_name]
-You: @Lita ey logs [env_name]
-You: @Lita ey status [env_name]
+You: @Lita ey servers <app> <env>
+You: @Lita ey logs <app> <env>
+You: @Lita ey status <app> <env>
 ```
 
 ## See also
