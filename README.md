@@ -1,5 +1,6 @@
 # lita-ey-info
 
+[![Gem Version](https://badge.fury.io/rb/lita-ey-info.svg)](http://badge.fury.io/rb/lita-ey-info)
 [![Build Status](https://travis-ci.org/carlosparamio/lita-ey-info.png?branch=master)](https://travis-ci.org/carlosparamio/lita-ey-info)
 [![Code Climate](https://codeclimate.com/github/carlosparamio/lita-ey-info.png)](https://codeclimate.com/github/carlosparamio/lita-ey-info)
 [![Coverage Status](https://coveralls.io/repos/carlosparamio/lita-ey-info/badge.png)](https://coveralls.io/r/carlosparamio/lita-ey-info)
